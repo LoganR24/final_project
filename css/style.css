@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+body {
+  background-image: url(/images/background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: lightslategray;
+}
+
+.container {
+  width: 90%;
+  margin-top: 0;
+}
+
+#linkBtn, #stackBtn {
+  width: 23vw;
+  border: white solid 1px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.mainTitle {
+  margin: 2%;
+}
+
+.nameText1, .nameText2 {
+  color: white;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black,
+    4px 4px 0 white,
+    5px 5px 0 white,
+    6px 6px 0 white,
+    7px 7px 0 white;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin: 0;
+  text-align: center;
+}
+
+.nameText1 {
+  font-size: 8vw;
+}
+
+#name, #subject, #message {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: .5rem .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  background-clip: padding-box;
+  border: white solid 1px;
+  border-radius: .25rem;
+}
+
+#submit {
+  background-color: rgba(0, 0, 0, .5);
+  border: white solid 1px;
+  font-size: 1rem;
+  width: 15vw;
+}
+
+#main-bio {
+  padding: 2%;
+  background-color: rgba(0, 0, 0, .5);
+  border: white solid 1px;
+}
+
+#bio-image {
+  float: left;
+}
+
+#aboutme, h2 {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.card-img-top {
+   max-width: 100%;
+   max-height: 100%;
+    padding: 5px;
+}
