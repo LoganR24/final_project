@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- links for different styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -38,37 +39,28 @@
                 <div class="mainTitle">
                     <p class="nameText1">Dream Vacation Rentals</p>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card shadow round" style="width: 18rem;">
-                            <a href="https://www.airbnb.com"><img src="/images/airbnb_image.jpg" class="card-img-top"
-                                    alt="..."></a>
-                            <div class="card-body">
-                                <p class="card-text">Airbnb.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card shadow round" style="width: 18rem;">
-                            <a href="https://www.vrbo.com"><img src="/images/vrbo_image.jpg" class="card-img-top"
-                                    alt="..."></a>
-                            <div class="card-body">
-                                <p class="card-text">Vrbo.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card shadow round" style="width: 18rem;">
-                            <a href="http://www.booking.com"><img src="images/booking_house.jpg" class="card-img-top"
-                                    alt="..."></a>
-                            <div class="card-body">
-                                <p class="card-text">Booking.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
+        <form>
+            <input type="text" id="name" name="name" class="text shadow mb-2"
+                onfocus="`${document.getElementById('name').style='background-color:white'}`"
+                onblur="`${document.getElementById('name').style='background-color:white'}`" placeholder="Name...">
+            <br>
+            <input type="text" id="subject" name="subject" class="text shadow mb-2"
+                onfocus="`${document.getElementById('subject').style='background-color:white'}`"
+                onblur="`${document.getElementById('subject').style='background-color:white'}`"
+                placeholder="Subject...">
+            <br>
+            <input type="text" id="message" name="message" class="text shadow mb-2"
+                onfocus="`${document.getElementById('message').style='background-color:white'}`"
+                onblur="`${document.getElementById('message').style='background-color:white'}`"
+                placeholder="Message...">
+            <br>
+            <input type="submit" id="submit"
+                onclick="window.location.href=`mailto:dbfoster86@gmail.com?subject=${document.getElementById('subject').value}&body=${document.getElementById('message').value}`;"
+                class="btn btn-outline-light transparent shadow" value="Submit">
+        </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
