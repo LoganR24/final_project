@@ -103,54 +103,64 @@ h2 {
   object-fit: cover;
 }
 
-footer{
-  background-color: rgba(0, 0, 0, .5); 
+footer {
+  background-color: rgba(0, 0, 0, .5);
   text-align: center;
   color: white;
 }
-video{
-  display: block; 
-  margin:auto;
-  margin-top:0;
+
+video {
+  display: block;
+  margin: auto;
+  margin-top: 0;
   width: 960px;
   height: 840px;
 }
-table{
-  color:white;
+
+table {
+  color: white;
   background-color: black;
-  border-spacing:50px; 
-  margin:auto;
+  border-spacing: 50px;
+  margin: auto;
 }
-th, td{
+
+th,
+td {
   padding: 10px;
-  text-align:center ;
+  text-align: center;
 }
-.fleft{
-  float:left;
+
+.fleft {
+  float: left;
   margin-left: 250px;
   margin-bottom: 25px;
+
 }
 
-.clear{
-  clear:left;
+.clear {
+  clear: left;
 }
 
-@media screen and (max-width: 900px){
-  video{
+@media screen and (max-width: 900px) {
+  video {
     width: 500px;
     height: 500px;
   }
-  body{
+
+  body {
     background-image: none;
   }
-  .nameText1{
+
+  .nameText1 {
     font-size: 60px;
     text-align: center;
   }
-  #submit{
+
+  #submit {
     width: 100px;
   }
-  .fleft{
+
+  .fleft {
     margin-left: 55px;
   }
 }
